@@ -4195,6 +4195,7 @@ h6 {
   font-family: 'Giorgio Sans Bold';
   font-weight: normal;
   font-style: normal;
+  align-self: center;
 }
 
 .franchise-banner-block-subtitle {
@@ -4519,6 +4520,7 @@ h6 {
 
 .franchise-banner-photos-row2-blocktext-item-desc {
   padding-left: 20px;
+  max-width: calc(100% - 50px);
 }
 
 .franchise-banner-photos-row2-blocktext-item-desc p {
