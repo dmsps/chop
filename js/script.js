@@ -1471,9 +1471,9 @@ var mySwiper = new Swiper('.swiper-container-franchise', {
 
 /* Franchise Swiper */
 
-
+/* Stickyfill */
 var elements = $('.franchise-banner-photos-row1');
 Stickyfill.add(elements);
-
+/* Stickyfill */
 
 //# sourceMappingURL=../maps/script.js.map
