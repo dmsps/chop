@@ -4112,10 +4112,6 @@ h6 {
 
 /* Main styles */
 
-.swiper-pagination-bullet-active {
-  background: #ffffff;
-}
-
 /* Franchise Banner */
 
 .franchise-banner {
@@ -4195,7 +4191,6 @@ h6 {
   font-family: 'Giorgio Sans Bold';
   font-weight: normal;
   font-style: normal;
-  align-self: center;
 }
 
 .franchise-banner-block-subtitle {
@@ -4343,7 +4338,6 @@ h6 {
 .franchise-banner-photos {
   position: relative;
   z-index: 11111;
-  overflow: visible;
 }
 
 .franchise-banner-photos-row1 {
@@ -4362,6 +4356,7 @@ h6 {
   position: sticky;
   width: 100%;
   top: 0;
+  overflow: visible;
 }
 
 .franchise-banner-photos-row1-block {
@@ -4413,7 +4408,7 @@ h6 {
 
 .franchise-banner-photos-row2-blocktext {
   color: #ffffff;
-  width: 50%;
+  max-width: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4520,7 +4515,6 @@ h6 {
 
 .franchise-banner-photos-row2-blocktext-item-desc {
   padding-left: 20px;
-  max-width: calc(100% - 50px);
 }
 
 .franchise-banner-photos-row2-blocktext-item-desc p {
@@ -4700,6 +4694,10 @@ h6 {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100%;
+}
+
+.franchise-wyg .swiper-pagination-bullet-active {
+  background: #ffffff !important;
 }
 
 .franchise-wyg-title {
@@ -5026,7 +5024,6 @@ h6 {
   }
 
   .franchise-banner-description p {
-    height: 100%;
     margin-bottom: 35px;
   }
 
@@ -5089,6 +5086,11 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .franchise-banner-description-wrapper {
+    height: 100%;
+    padding: 40px 30px;
+  }
+
   .franchise-banner-photos-row1 {
     top: 0;
     height: 100vh;
@@ -5164,8 +5166,8 @@ h6 {
   }
 
   .franchise-banner-description-wrapper {
-    height: calc(100vh - 97px);
-    padding: 0 30px;
+    height: 100%;
+    padding: 40px 30px;
   }
 
   .franchise-banner-description p {
@@ -5229,7 +5231,7 @@ h6 {
   }
 
   .franchise-banner-photos-row2-blocktext {
-    width: 100%;
+    max-width: 100%;
   }
 
   .franchise-banner-photos-row2-blocktext-wrapper {
@@ -5427,6 +5429,7 @@ h6 {
   .franchise-form .form-input {
     height: 40px;
     padding-left: 15px;
+    line-height: 40px;
   }
 
   .franchise-form .form-submit {
